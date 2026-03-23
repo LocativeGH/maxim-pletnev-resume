@@ -1535,6 +1535,20 @@ footer { padding: 2.5rem; border-top: 1px solid var(--border); }
   visibility: visible !important;
 }
 
+  /* ── Mobile fixes ── */
+@media (max-width: 600px) {
+  /* Баг 1: мета-текст перекрывает заголовок в bento-карточках */
+  .ai-bento-meta { display: none; }
+
+  /* Баг 2: email обрезается */
+  .contact-item-value {
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    white-space: normal;
+    word-break: break-all;
+  }
+}
+  
 </style>
 </head>
 <body>
